@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100b19">
+<title>白夜 | NIGHT ARCHIVE</title>
+<style>
+:root{--bg:#0a0810;--panel:#151020;--panel2:#1e1630;--purple:#a78bfa;--pink:#d8a4ff;--text:#f3eefc;--muted:#b8abc9;--line:#3b2a55}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;background:radial-gradient(ellipse at 20% 0%,#302047 0,transparent 38%),radial-gradient(ellipse at 100% 35%,#201333 0,transparent 34%),var(--bg);line-height:1.7}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:53px 53px;mask-image:linear-gradient(to bottom,#000,transparent 80%);z-index:-1}
+a{color:var(--pink);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{width:min(1050px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px;border-bottom:1px solid #ffffff15}
+.brand{letter-spacing:.18em;font-size:.8rem;color:var(--pink);font-weight:800}
+nav a{font-size:.9rem;color:var(--muted);margin-left:15px}
+.hero{min-height:72vh;display:grid;align-items:center;grid-template-columns:1.4fr .8fr;gap:32px;padding:58px 0}
+.kicker{color:var(--purple);letter-spacing:.24em;font-size:.76rem;font-weight:800}
+h1{font-size:clamp(3.5rem,10vw,7rem);line-height:1;margin:14px 0;background:linear-gradient(110deg,#fff,#d6b9ff 45%,#9b7bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.subtitle{font-size:1.1rem;color:var(--muted);max-width:600px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.btn{display:inline-block;border:1px solid #8f6dd7;padding:10px 17px;border-radius:999px;background:#211631;color:#fff}
+.btn.primary{background:linear-gradient(110deg,#7042b4,#a25dc1);border:0}
+.mooncard{border:1px solid var(--line);border-radius:24px;background:linear-gradient(150deg,#251837dd,#100b18ee);padding:28px;text-align:center;box-shadow:0 20px 70px #0008;position:relative;overflow:hidden}
+.moon{font-size:6rem;line-height:1.2;filter:drop-shadow(0 0 25px #ad86ff88);animation:float 5s ease-in-out infinite}
+.butterflies{font-size:1.5rem;letter-spacing:.8em;color:var(--pink)}
+.status{display:inline-block;margin-top:14px;border:1px solid #6d518e;color:#d9c4ff;padding:4px 11px;border-radius:999px;font-size:.8rem}
+@keyframes float{50%{transform:translateY(-9px) rotate(3deg)}}
+section{padding:34px 0}
+.section-title{font-size:1.65rem;margin:0 0 18px}
+.section-title span{color:var(--purple)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(140deg,#191226eF,#100c17ef);padding:21px}
+.card h3{margin:0 0 8px;color:#e5d6ff}
+.muted{color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{border:1px solid #4e386c;border-radius:999px;padding:4px 10px;color:#ddc9ff;font-size:.86rem;background:#211631}
+.game-feature{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.game{min-height:150px;background:linear-gradient(135deg,#211431,#100c17);border:1px solid var(--line);border-radius:18px;padding:22px;position:relative;overflow:hidden}
+.game:after{content:"✦";position:absolute;right:18px;bottom:-22px;font-size:7rem;color:#b18aff12}
+.game .emoji{font-size:1.7rem}
+.friend{border-left:3px solid var(--purple);padding:12px 17px;background:#181124;border-radius:0 12px 12px 0}
+footer{text-align:center;padding:38px 0 48px;color:#8e809f;font-size:.86rem}
+.small{font-size:.85rem}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding:40px 0;min-height:auto}.mooncard{max-width:440px;width:100%;margin:auto}.grid,.game-feature{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}nav a{margin:0 12px 0 0}.hero h1{font-size:4.4rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="brand">✦ NIGHT ARCHIVE / PROFILE 0127</div>
+  <div><a href="#about">關於我</a><a href="#likes">喜好</a><a href="#games">遊戲檔案</a><a href="#boundary">相處指南</a></div>
+</nav>
+<header class="hero">
+  <div>
+    <div class="kicker">WELCOME TO MY LITTLE NIGHT</div>
+    <h1>白夜</h1>
+    <p class="subtitle">「在紫色月光下，收集喜歡的角色、音樂與靈感。」<br>可以叫我白夜。這裡是我的小小個人檔案，歡迎來認識我。</p>
+    <div class="actions"><a class="btn primary" href="#about">✧ 認識白夜</a><a class="btn" href="#games">☾ 進入遊戲檔案</a></div>
+  </div>
+  <aside class="mooncard">
+    <div class="butterflies">🦋 ✦ 🦋</div>
+    <div class="moon">☾</div>
+    <div class="kicker">THE PURPLE NIGHT</div>
+    <div class="status">✦ ONLINE IN MY OWN WORLD</div>
+    <p class="muted small">畫畫・音樂・遊戲・角色故事</p>
+    <div class="butterflies">✧ 🦋 ✧</div>
+  </aside>
+</header>
+
+<section id="about">
+  <h2 class="section-title"><span>01.</span> 關於白夜</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>✦ 基本資料</h3>
+      <p class="muted">暱稱：白夜<br>生日：12 月 27 日｜摩羯座<br>目前是高中一年級，廣告設計相關科系。</p>
+      <div class="tags"><span class="tag">畫畫</span><span class="tag">音樂</span><span class="tag">遊戲玩家</span></div>
+    </article>
+    <article class="card">
+      <h3>☾ 我的個性</h3>
+      <p class="muted">第一眼可能有點冷淡，但其實還是會默默關心在意的人。偶爾有點病嬌氣場、佔有慾也比較強；熟悉之後，希望可以自在地相處。</p>
+    </article>
+    <article class="card">
+      <h3>🦋 關於我的喜好</h3>
+      <p class="muted">喜歡畫畫、聽音樂，也喜歡研究角色、世界觀和故事。比起熱鬧，我也很享受沉浸在自己的小宇宙裡。</p>
+    </article>
+    <article class="card">
+      <h3>♡ 相處小提醒</h3>
+      <p class="muted">我比較慢熱，也有脆弱、需要被溫柔對待的時候。如果想找我聊天，可以主動一點；直接而真誠的關心會讓我更容易打開話匣子。</p>
+    </article>
+  </div>
+</section>
+
+<section id="likes">
+  <h2 class="section-title"><span>02.</span> 喜歡的角色與世界</h2>
+  <div class="grid">
+    <article class="card"><h3>🗡️ Two Time</h3><p class="muted">喜歡的角色之一。角色相關的故事、氣氛與設定都很有吸引力。</p><div class="tags"><span class="tag">Forsaken</span><span class="tag">Favorite</span></div></article>
+    <article class="card"><h3>💜 Azure</h3><p class="muted">喜歡 Azure 的角色魅力，也喜歡想像角色之間的故事與情緒。</p><div class="tags"><span class="tag">Azure</span><span class="tag">Lore</span></div></article>
+    <article class="card"><h3>✧ 其他喜歡的角色</h3><p class="muted">Cosmo、Flins、Nightshade，以及更多讓我有靈感的角色。</p></article>
+    <article class="card"><h3>🎨 我的創作角落</h3><p class="muted">有時畫圖、有時聽歌，也可能突然掉進某個角色設定或故事的坑裡。</p></article>
+  </div>
+</section>
+
+<section id="games">
+  <h2 class="section-title"><span>03.</span> 遊戲玩家檔案</h2>
+  <div class="game-feature">
+    <article class="game"><div class="emoji">🎮</div><h3>Forsaken</h3><p class="muted">主要關注的遊戲之一。Two Time、Azure 是我特別喜歡的角色。</p></article>
+    <article class="game"><div class="emoji">🌐</div><h3>Roblox</h3><p class="muted">探索不同遊戲、角色與玩家社群的地方。</p></article>
+  </div>
+  <p class="muted small">※ 之後可以在這裡加上你的遊戲 ID、角色截圖或作品連結；公開前請確認不會暴露私人資料。</p>
+</section>
+
+<section id="boundary">
+  <h2 class="section-title"><span>04.</span> 與白夜相處指南</h2>
+  <div class="card">
+    <p>☾ <strong>可以主動找我聊天。</strong> 不用每次都等我開口，分享你喜歡的東西、傳個有趣的梗都可以。</p>
+    <p>🦋 <strong>請尊重我的界線。</strong> 我喜歡坦率、真誠的互動，但也需要自己的空間；彼此舒服最重要。</p>
+    <p>✦ <strong>溫柔一點就好。</strong> 我看起來可能很冷淡，不代表我完全不在意。</p>
+  </div>
+  <div class="friend" style="margin-top:15px">
+    <strong>給重要朋友的一格</strong><br>
+    <span class="muted">最好的朋友：CH ♡</span>
+  </div>
+</section>
+<footer>
+  <div class="butterflies">☾ ✦ 🦋 ✦ ☽</div>
+  <p>WHITE NIGHT · NIGHT ARCHIVE</p>
+  <p>Made with a little purple moonlight.</p>
+  <p class="small">這是個人介紹頁。請只公開你願意讓陌生人看到的資訊。</p>
+</footer>
+</div>
+</body>
+</html>
